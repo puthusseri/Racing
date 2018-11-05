@@ -250,13 +250,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.071825214, y: 0.545365, z: -0.04880037, w: -0.8336886}
-  m_LocalPosition: {x: 367.66, y: 4.08, z: 427.73}
+  m_LocalRotation: {x: -0.035791993, y: 0.54696256, z: -0.025227226, w: -0.8360111}
+  m_LocalPosition: {x: 502.8, y: 21.99, z: 331.87}
   m_LocalScale: {x: 1.1485, y: 1.0712, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 9.962001, y: 293.633, z: 0.17600001}
+  m_LocalEulerAnglesHint: {x: 5.0160003, y: 293.61798, z: 0.17400001}
 --- !u!114 &534669906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +268,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdeb80e2a01bc5748a9d9962d688b495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1984944185}
+  target: {fileID: 1984944189}
+  distance: 3
+  height: 3
+  damping: 5
+  smoothRotation: 1
+  followBehind: 1
+  rotationDamping: 10
 --- !u!1 &846912425
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,17 +429,17 @@ Prefab:
     - target: {fileID: 146000011612348708, guid: 6577377bae7db18429e690f8f8f57881,
         type: 2}
       propertyPath: m_SuspensionSpring.spring
-      value: 34292.805
+      value: 34292.797
       objectReference: {fileID: 0}
     - target: {fileID: 146000011612348708, guid: 6577377bae7db18429e690f8f8f57881,
         type: 2}
       propertyPath: m_SuspensionSpring.damper
-      value: 5486.8486
+      value: 5486.8477
       objectReference: {fileID: 0}
     - target: {fileID: 146000011612348708, guid: 6577377bae7db18429e690f8f8f57881,
         type: 2}
       propertyPath: m_SuspensionDistance
-      value: 0.19619998
+      value: 0.19620001
       objectReference: {fileID: 0}
     - target: {fileID: 146000011612348708, guid: 6577377bae7db18429e690f8f8f57881,
         type: 2}
@@ -467,8 +473,8 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6577377bae7db18429e690f8f8f57881, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1984944185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000013904118194, guid: 6577377bae7db18429e690f8f8f57881,
+--- !u!4 &1984944189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4000012934762246, guid: 6577377bae7db18429e690f8f8f57881,
     type: 2}
   m_PrefabInternal: {fileID: 1007922958}
