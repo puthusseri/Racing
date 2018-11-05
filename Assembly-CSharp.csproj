@@ -53,7 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\WheelDrive.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\WheelDrive.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>E:/Unity/Racing/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
